@@ -1,0 +1,44 @@
+SOFE 4590U - Lab 4 Part 1
+Jetson TX2 CPU and GPU Monitoring Commands
+
+1. Connect to Jetson TX2:
+ssh -Y student1@JETSON_IP
+
+2. Open CPU and memory monitor:
+gnome-system-monitor
+
+3. Locate tegrastats:
+which tegrastats
+
+4. Monitor GPU and RAM:
+tegrastats
+
+5. Monitor at 1-second intervals:
+tegrastats --interval 1000
+
+6. Open Jetson system monitor:
+jtop
+
+7. Open Jetson configuration:
+jetson_config
+
+8. Display Jetson information:
+jetson_release -v
+
+9. Open web browser:
+sensible-browser
+
+10. Run GPU monitoring graph:
+python3 gpuGraph.py
+
+11. Stop a running foreground command:
+Ctrl + C
+
+NOTES:
+- Replace JETSON_IP with the school's Jetson IP address.
+- Run the monitoring commands on the Jetson TX2.
+- Transfer gpuGraph.py to the Jetson before running it.
+- Record CPU, GPU and RAM utilization.
+- Capture screenshots of the monitoring results.
+- Compare GPU activity before, during and after
+  browser usage.
